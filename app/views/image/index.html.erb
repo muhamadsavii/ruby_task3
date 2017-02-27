@@ -1,0 +1,79 @@
+
+  <body>   
+    
+    <!-- Put Navigation bar here  -->
+     <!--bagian navigation-->
+    <div class="navbar navbar-fixed-top navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a href=”#” class = "navbar-brand">Training Bootstrap</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home", '/home', :method => :get %></li>
+            <li><%= link_to "Profile", '/image', :method => :get %></li>
+            <li><%= link_to "Contact", '/contact', :method => :get %></li>
+          </ul>
+        </div>  
+      </div>
+    </div>
+    
+    <!--Put Content website here -->
+    <!-- Bagian Content -->
+    <br>
+    <div class="container">
+  <div class="row">
+              <div class="col-sm-3" style="">
+                <h3 style="margin-top: 0px"><p>Riku Kiranatama</p></h3>
+                <img style="margin-left: 30px;" src="profile.png" class="img-circle" alt="Cinque Terre" width="120" height="120"> 
+              </div>
+
+
+              <div class="col-sm-9" style="">
+                  <table class="table table-striped">
+                  
+                  <tbody>
+                    <tr>
+                      <td><strong>Nama</strong></td>
+                      <td>Riku Kiratama</td>
+                     
+                    </tr>
+                    <tr>
+                      <td><strong>Tempat Tanggal Lahir</strong></td>
+                      <td>Bandung, 7 oktober 1989</td>
+                      
+                    </tr>
+                    <tr>
+                      <td><strong>Jenis Kelamin</strong></td>
+                      <td>Pria</td>
+                     
+                    </tr>
+                    <tr>
+                      <td><strong>Alamat Domisili</strong></td>
+                      <td>Jl Soekarno hatta no 104</td>
+                     
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+             
+              
+  </div>   
+  </div>   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.2.5.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+     <script src="js/material.min.js"></script>
+    <script src="js/ripples.min.js"></script>
+    <script>
+      $.material.init();
+    </script>
+  </body>
+ </html>
